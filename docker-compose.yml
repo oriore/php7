@@ -1,0 +1,13 @@
+version: '3'
+
+services :
+  php:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    volumes:
+        - ./script:/var/www/script
+    ports:
+        - '8082:80'
+    tty: true
+    stdin_open: true
