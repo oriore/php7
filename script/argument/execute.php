@@ -41,3 +41,5 @@ function outputNullOrString(?string $value): void
 outputArray(['a', 'b', 'c', 'd', 'e']);
 outputString('abcde');
 outputNullOrString(null);
+
+echo 'aa';
